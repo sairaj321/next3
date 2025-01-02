@@ -19,3 +19,8 @@ module.exports = {
     ],
   },
 }
+const nextConfig={
+  output:"export",
+};
+
+module.exports=nextConfig;

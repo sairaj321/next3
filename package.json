@@ -1,11 +1,14 @@
 {
+  "homepage": "https://sairaj321.github.io/sairaj_portfolio-master/",
   "name": "developer-portfolio",
   "description": "Portfolio website using next js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+   "build": "next build && next export",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
